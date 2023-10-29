@@ -2,7 +2,7 @@ from locust import HttpUser, task
 
 
 class QuickstartUser(HttpUser):
-    @task(5)
+    @task(4)
     def index(self):
         self.client.get("/index")
 
